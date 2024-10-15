@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.maindiv{
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(135deg,#153677,#d621a6); */
+    background: linear-gradient(135deg,black,green);
+    padding: 10px;
+}
+.todo{
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    border: 2px solid;
+    
+}
+.todo h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+ h2 .fa-solid fa-pencil{
+    margin-left: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image:url("https://images.pexels.com/photos/5712472/pexels-photo-5712472.jpeg?auto=compress&cs=tinysrgb&w=600") ;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+    border:2px black;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+    background-image:url("https://images.pexels.com/photos/25724597/pexels-photo-25724597/free-photo-of-orange-ball-in-a-studio.jpeg?auto=compress&cs=tinysrgb&w=600") ;
+}
+ul li span{
+    position: absolute;
+    right: 2px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
+}
